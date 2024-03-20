@@ -7,7 +7,8 @@ using UnityEngine;
  
     public GameObject[] modelArray;
     public GameObject ui;
-    private int modelNumber;
+    // change00 private int modelNumber;
+    private int modelNumber = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,11 +30,7 @@ using UnityEngine;
                 modelArray[x].SetActive(false);
             }
         }
-        modelNumber++;
-        if (modelNumber >= modelArray.Length)
-        {
-            modelNumber = 0;
-        }
+        
     }
 
     // Update is called once per frame
@@ -53,10 +50,24 @@ using UnityEngine;
     public void HideUI()
     {
         ui.SetActive(false);
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
     public void ShowUI()
     {
         ui.SetActive(true);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
+
+    public void PressButton()
+    {
+        modelNumber++;
+        if (modelNumber >= modelArray.Length)
+        {
+            modelNumber = 0;
+        }
+        ModelSwitch();
     }
 }
 
