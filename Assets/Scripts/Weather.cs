@@ -23,12 +23,14 @@ public class ParticleController : MonoBehaviour
     public void ActivateRainFall()
     {
         rainFallParticleSystem.Play();
+        GetComponent <ParticleSystem>().Play (); ParticleSystem.EmissionModule em = GetComponent<ParticleSystem>().emission; em.enabled = true;
     }
 
     // Function to deactivate the RainFall particle system
     public void DeactivateRainFall()
     {
         rainFallParticleSystem.Stop();
+        GetComponent <ParticleSystem>().Play (); ParticleSystem.EmissionModule em = GetComponent<ParticleSystem>().emission; em.enabled = false;
     }
 
     

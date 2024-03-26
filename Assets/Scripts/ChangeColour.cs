@@ -21,6 +21,9 @@ using UnityEngine;
     {
         for (int x = 0; x < modelArray.Length; x++)
         {
+            // modelArray[x].SetActive(false);
+            
+            
             if (x == modelNumber)
             {
                 modelArray[x].SetActive(true);
