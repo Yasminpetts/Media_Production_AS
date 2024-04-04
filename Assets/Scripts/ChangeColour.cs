@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
     public class ModelSwap : MonoBehaviour {
@@ -72,6 +73,11 @@ using UnityEngine;
             modelNumber = 0;
         }
         ModelSwitch();
+    }
+
+    public void ConfirmButton()
+    {
+        SceneManager.LoadScene("CarCntrl");
     }
 }
 
