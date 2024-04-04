@@ -8431,7 +8431,7 @@ Transform:
   m_GameObject: {fileID: 265652689}
   serializedVersion: 2
   m_LocalRotation: {x: 0.098537594, y: -0.000000017649615, z: 0.0000000017476559, w: 0.99513334}
-  m_LocalPosition: {x: 6.44, y: 6.9799995, z: -6.22}
+  m_LocalPosition: {x: 6.44, y: 14.37, z: 7.62}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -22675,11 +22675,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3815435553298920706, guid: a9cbfe7195f75844aa7ec0619ca7616f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.5
+      value: 11.89
       objectReference: {fileID: 0}
     - target: {fileID: 3815435553298920706, guid: a9cbfe7195f75844aa7ec0619ca7616f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 13.84
       objectReference: {fileID: 0}
     - target: {fileID: 3815435553298920706, guid: a9cbfe7195f75844aa7ec0619ca7616f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -27465,6 +27465,7 @@ GameObject:
   - component: {fileID: 1131569639}
   - component: {fileID: 1131569638}
   - component: {fileID: 1131569641}
+  - component: {fileID: 1131569642}
   m_Layer: 0
   m_Name: Terrain
   m_TagString: Untagged
@@ -27570,6 +27571,28 @@ MonoBehaviour:
   SplatSingleRoad: 0
   SplatSingleChoiceIndex: 0
   RoadSingleChoiceUID: 
+--- !u!64 &1131569642
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1131569637}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &1132636337
 GameObject:
   m_ObjectHideFlags: 0
@@ -48094,7 +48117,7 @@ Transform:
   m_GameObject: {fileID: 1795333115}
   serializedVersion: 2
   m_LocalRotation: {x: 0.098537594, y: -0.000000017649615, z: 0.0000000017476559, w: 0.99513334}
-  m_LocalPosition: {x: 6.44, y: 6.9799995, z: -6.22}
+  m_LocalPosition: {x: 6.44, y: 14.37, z: 7.62}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
