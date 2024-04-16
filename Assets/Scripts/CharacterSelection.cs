@@ -32,6 +32,7 @@ public class CharacterSelection : MonoBehaviour
     {
         // toggle off the current model
         characterList[index].SetActive(false);
+        Debug.Log(characterList[index].name);
 
         index--;
         if (index <0)
@@ -45,7 +46,7 @@ public class CharacterSelection : MonoBehaviour
     {
         // toggle off the current model
         characterList[index].SetActive(false);
-
+        Debug.Log(characterList[index].name);
         index++;
         if (index == characterList.Length)
         index = 0;
